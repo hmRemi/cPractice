@@ -26,10 +26,13 @@ public class RankManager {
     }
 
     public void loadRank() {
-
         if (Bukkit.getPluginManager().getPlugin("AquaCore") != null) {
             this.setRank(new AquaCore());
             this.setRankSystem("AquaCore");
+        }
+        if (Bukkit.getPluginManager().getPlugin("PhoenixCore") != null) {
+            this.setRank(new PheonixCore());
+            this.setRankSystem("PhoenixCore");
         }
         else if (Bukkit.getPluginManager().getPlugin("cCore") != null) {
             this.setRank(new cCore());

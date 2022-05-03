@@ -57,5 +57,4 @@ public class ArenaCreateCommand extends BaseCommand {
 			player.sendMessage(CC.RED + "An arena with that name already exists.");
 		}
 	}
-
 }

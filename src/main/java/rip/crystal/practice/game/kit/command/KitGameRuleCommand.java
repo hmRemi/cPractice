@@ -1,7 +1,6 @@
 package rip.crystal.practice.game.kit.command;
 
 import rip.crystal.practice.game.kit.Kit;
-import rip.crystal.practice.game.kit.menu.KitEditEffectsMenu;
 import rip.crystal.practice.utilities.chat.CC;
 import rip.crystal.practice.api.command.BaseCommand;
 import rip.crystal.practice.api.command.Command;

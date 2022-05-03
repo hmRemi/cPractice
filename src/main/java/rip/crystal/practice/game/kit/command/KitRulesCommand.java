@@ -20,6 +20,7 @@ public class KitRulesCommand extends BaseCommand {
 		player.sendMessage(CC.translate(" &7- &cHealthregeneration &f(true/false)"));
 		player.sendMessage(CC.translate(" &7- &cNofalldamage &f(true/false)"));
 		player.sendMessage(CC.translate(" &7- &cEffects &f(add/remove/list)"));
+		player.sendMessage(CC.translate(" &7- &cAntiFood &f(true/false)"));
 		player.sendMessage(CC.translate(" &7- &cShowhealth &f(true/false)"));
 		player.sendMessage(CC.translate(" &7- &cAntiFood &f(true/false)"));
 		player.sendMessage(CC.translate(" &7- &cEditoritems &f(blank)"));
