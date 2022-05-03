@@ -59,11 +59,11 @@ QUEUE:
     NAME_COLOR: DARK_BLUE
     # kit item lore
     LORE:
-      - '{bars}'
-      - '&9In Fighting&7: &r{in-fight}'
-      - '&9In Queueing&7: &r{in-queue}'
-      - '&9Winstreak: &f{winstreak}'
-      - '{bars}'
+    - '{bars}'
+    - '&9In Fighting&7: &r{in-fight}'
+    - '&9In Queueing&7: &r{in-queue}'
+    - '&9Winstreak: &f{winstreak}'
+    - '{bars}'
   # Ranked Queue settings
   RANKED:
     # GUI Title
@@ -72,10 +72,10 @@ QUEUE:
     NAME_COLOR: DARK_BLUE
     # kit item lore
     LORE:
-      - '{bars}'
-      - '&9In Fighting&7: &r{in-fight}'
-      - '&9In Queueing&7: &r{in-queue}'
-      - '{bars}'
+    - '{bars}'
+    - '&9In Fighting&7: &r{in-fight}'
+    - '&9In Queueing&7: &r{in-queue}'
+    - '{bars}'
 
 QUEUES:
   # If enabled, multi-queue menu will be enabled & Single queue items will automatically be disabled
@@ -97,12 +97,12 @@ QUEUES:
       SLOT: 11
       ICON: IRON_SWORD
       LORE:
-        - '&8&m--------------------------------'
-        - '&7Casual 1v1''s matches'
-        - '&7with no loss penalty.'
-        - ' '
-        - '&9Click to play!'
-        - '&8&m--------------------------------'
+      - '&8&m--------------------------------'
+      - '&7Casual 1v1''s matches'
+      - '&7with no loss penalty.'
+      - ' '
+      - '&9Click to play!'
+      - '&8&m--------------------------------'
     RANKED:
       ENABLED: true
       NAME: '&9&lRanked'
@@ -110,13 +110,13 @@ QUEUES:
       ICON: DIAMOND_SWORD
       DATA: 0
       LORE:
-        - '&8&m--------------------------------'
-        - '&7Casual 1v1''s matches with'
-        - '&7a ranked aspect to them. This'
-        - '&7includes ELO.'
-        - ' '
-        - '&9Click to play!'
-        - '&8&m--------------------------------'
+      - '&8&m--------------------------------'
+      - '&7Casual 1v1''s matches with'
+      - '&7a ranked aspect to them. This'
+      - '&7includes ELO.'
+      - ' '
+      - '&9Click to play!'
+      - '&8&m--------------------------------'
     FFA:
       ENABLED: true
       NAME: '&9&lFFA'
@@ -124,16 +124,16 @@ QUEUES:
       ICON: GOLD_AXE
       DATA: 0
       LORE:
-        - '&8&m--------------------------------'
-        - '&7Make your way through the'
-        - '&7course and beat the others!'
-        - '&7The player to reach the goal wins'
-        - ' '
-        - '&fPlaying: &9<players>'
-        - '&fKit: &9<kit>'
-        - ' '
-        - '&9Click to play!'
-        - '&8&m--------------------------------'
+      - '&8&m--------------------------------'
+      - '&7Make your way through the'
+      - '&7course and beat the others!'
+      - '&7The player to reach the goal wins'
+      - ' '
+      - '&fPlaying: &9<players>'
+      - '&fKit: &9<kit>'
+      - ' '
+      - '&9Click to play!'
+      - '&8&m--------------------------------'
 
 # Party configuration
 PARTY:
@@ -165,10 +165,10 @@ STATS_MENU:
   SIZE: 6
   # Lore
   DESCRIPTION:
-    - '{bars}'
-    - '&7&oElo: &f{elo}'
-    - '&7&oWins: &f{wins}'
-    - '&7&oLosses: &f{losses}'
-    - '{bars}'
+  - '{bars}'
+  - '&7&oElo: &f{elo}'
+  - '&7&oWins: &f{wins}'
+  - '&7&oLosses: &f{losses}'
+  - '{bars}'
 # Points needed to win a clan tournament?
 WINNING-POINTS-CLAN-TOURNAMENT: 10
