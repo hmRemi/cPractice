@@ -1,9 +1,0 @@
-
-*.iml
-/target/
-.idea/misc.xml
-.idea/compiler.xml
-*.class
-*.jar
-*.log
-.idea/misc.xml
