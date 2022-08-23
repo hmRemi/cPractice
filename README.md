@@ -1,5 +1,5 @@
-<h2>cPractice</h2>
-<h1>Advanced practice core for Minecraft Servers</h1>
+<h1>cPractice</h1>
+<h2>An Advanced Practice Core for Minecraft Servers</h2>
 
 This project is discontinued, find the latest updates here: (Updates not by me)
 ```
