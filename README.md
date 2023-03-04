@@ -1,6 +1,6 @@
 # cPractice
 
-Abandoned 
+Abandoned | New Recode: https://discord.gg/jqZBYKgjSf
 
 Highly configurable practice plugin. This project was originally closed source and is now open source.
 You are not allowed to sell this resource without leaving credits and royalties.
