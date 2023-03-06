@@ -1,4 +1,4 @@
-main: rip.crystal.practice.cPractice
+main: com.hysteria.practice.cPractice
 name: cPractice
 version: ${project.version}
 authors: ["ziue"]
