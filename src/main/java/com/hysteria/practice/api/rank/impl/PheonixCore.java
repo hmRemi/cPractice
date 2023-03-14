@@ -3,6 +3,7 @@ package com.hysteria.practice.api.rank.impl;
 import dev.phoenix.phoenix.PhoenixAPI;
 import dev.phoenix.phoenix.profile.Profile;
 import com.hysteria.practice.api.rank.Rank;
+import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
