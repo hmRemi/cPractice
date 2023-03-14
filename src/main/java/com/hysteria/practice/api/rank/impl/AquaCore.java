@@ -34,6 +34,16 @@ public class AquaCore implements Rank {
     }
 
     @Override
+    public String getRealName(Player player) {
+        return AquaCoreAPI.INSTANCE.getRealName(player);
+    }
+
+    @Override
+    public String getTag(Player player) {
+        return AquaCoreAPI.INSTANCE.getTag(player.getUniqueId()).getFormat();
+    }
+
+    @Override
     public int getWeight(UUID uuid) {
         GlobalPlayer globalPlayer = AquaCoreAPI.INSTANCE.getGlobalPlayer(uuid);
         return globalPlayer == null ? 0 : globalPlayer.getRankWeight();
