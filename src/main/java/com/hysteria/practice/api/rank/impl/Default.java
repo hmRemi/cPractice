@@ -1,6 +1,7 @@
 package com.hysteria.practice.api.rank.impl;
 
 import com.hysteria.practice.api.rank.Rank;
+import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
