@@ -28,6 +28,16 @@ public class HestiaCore implements Rank {
     }
 
     @Override
+    public String getRealName(Player player) {
+        return null;
+    }
+
+    @Override
+    public String getTag(Player player) {
+        return HestiaAPI.instance.getTagPrefix(player.getUniqueId());
+    }
+    
+    @Override
     public int getWeight(UUID uuid) {
         return 0;
     }
