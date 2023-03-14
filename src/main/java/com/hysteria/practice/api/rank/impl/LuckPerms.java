@@ -3,10 +3,12 @@ package com.hysteria.practice.api.rank.impl;
 import net.luckperms.api.node.Node;
 import net.luckperms.api.node.NodeType;
 import net.luckperms.api.node.types.WeightNode;
-import com.hysteria.practice.api.rank.Rank;import net.luckperms.api.cacheddata.CachedMetaData;
+import com.hysteria.practice.api.rank.Rank;
+import net.luckperms.api.cacheddata.CachedMetaData;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.query.QueryOptions;
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -55,6 +57,28 @@ public class LuckPerms implements Rank {
         return user.getCachedData().getMetaData(queryOptions.get());
     }
 
+    @Override
+    public String getRealName(Player player) {
+        return null;
+    }
+
+    private CachedMetaData getMetaData(UUID uuid) {
+        User user = this.luckPerms.getUserManager().getUser(uuid);
+
+        if (user == null) throw new IllegalArgumentException("LuckPerms user could not be found");
+
+        Optional<QueryOptions> queryOptions = this.luckPerms.getContextManager().getQueryOptions(user);
+
+        if (!queryOptions.isPresent()) throw new IllegalArgumentException("LuckPerms context could not be loaded");
+
+        return user.getCachedData().getMetaData(queryOptions.get());
+    }
+
+    @Override
+    public String getTag(Player player) {
+        return "";
+    }
+    
     @Override
     public int getWeight(UUID uuid) {
         User user = this.luckPerms.getUserManager().getUser(uuid);
