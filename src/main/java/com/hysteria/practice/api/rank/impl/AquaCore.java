@@ -4,6 +4,7 @@ import me.activated.core.api.player.GlobalPlayer;
 import com.hysteria.practice.api.rank.Rank;
 import me.activated.core.api.player.PlayerData;
 import me.activated.core.plugin.AquaCoreAPI;
+import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
