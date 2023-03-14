@@ -27,6 +27,16 @@ public class Default implements Rank {
     }
 
     @Override
+    public String getRealName(Player player) {
+        return null;
+    }
+    
+    @Override
+    public String getTag(Player player) {
+        return "";
+    }
+
+    @Override
     public int getWeight(UUID uuid) {
         return 0;
     }
