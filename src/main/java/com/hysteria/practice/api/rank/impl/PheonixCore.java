@@ -33,6 +33,16 @@ public class PheonixCore implements Rank {
     }
 
     @Override
+    public String getRealName(Player player) {
+        return null;
+    }
+
+    @Override
+    public String getTag(Player player) {
+        return PhoenixAPI.INSTANCE.getTag(player.getUniqueId()).getFormat();
+    }
+    
+    @Override
     public int getWeight(UUID uuid) {
         Profile globalPlayer = PhoenixAPI.INSTANCE.getProfile(uuid);
         return globalPlayer == null ? 0 : globalPlayer.getPriority();
