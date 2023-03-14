@@ -34,6 +34,16 @@ public class Zoom implements Rank {
     }
 
     @Override
+    public String getRealName(Player player) {
+        return null;
+    }
+
+    @Override
+    public String getTag(Player player) {
+        return ZoomAPI.hasTag(player) ? ZoomAPI.getTag(player) : "";
+    }
+    
+    @Override
     public int getWeight(UUID uuid) {
         return 0;
     }

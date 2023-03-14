@@ -3,6 +3,7 @@ package com.hysteria.practice.api.rank.impl;
 import dev.phoenix.phoenix.PhoenixAPI;
 import dev.phoenix.phoenix.profile.Profile;
 import com.hysteria.practice.api.rank.Rank;
+import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
@@ -32,6 +33,16 @@ public class PheonixCore implements Rank {
         return data == null ? "No Data" : data.getBestRank().getColor() + data.getBestRank().getName();
     }
 
+    @Override
+    public String getRealName(Player player) {
+        return null;
+    }
+
+    @Override
+    public String getTag(Player player) {
+        return PhoenixAPI.INSTANCE.getTag(player.getUniqueId()).getFormat();
+    }
+    
     @Override
     public int getWeight(UUID uuid) {
         Profile globalPlayer = PhoenixAPI.INSTANCE.getProfile(uuid);

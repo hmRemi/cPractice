@@ -4,6 +4,7 @@ import net.audidevelopment.core.api.player.GlobalPlayer;
 import net.audidevelopment.core.api.player.PlayerData;
 import net.audidevelopment.core.plugin.cCoreAPI;
 import com.hysteria.practice.api.rank.Rank;
+import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
@@ -31,6 +32,16 @@ public class cCore implements Rank {
     public String getColor(UUID uuid) {
         PlayerData data = cCoreAPI.INSTANCE.getPlayerData(uuid);
         return data == null ? "No Data" : data.getHighestRank().getColor() + data.getHighestRank().getName();
+    }
+    
+    @Override
+    public String getRealName(Player player) {
+        return cCoreAPI.INSTANCE.getRealName(player);
+    }
+
+    @Override
+    public String getTag(Player player) {
+        return cCoreAPI.INSTANCE.getTag(player.getUniqueId()).getFormat();
     }
 
     @Override
