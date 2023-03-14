@@ -32,6 +32,16 @@ public class cCore implements Rank {
         PlayerData data = cCoreAPI.INSTANCE.getPlayerData(uuid);
         return data == null ? "No Data" : data.getHighestRank().getColor() + data.getHighestRank().getName();
     }
+    
+    @Override
+    public String getRealName(Player player) {
+        return cCoreAPI.INSTANCE.getRealName(player);
+    }
+
+    @Override
+    public String getTag(Player player) {
+        return cCoreAPI.INSTANCE.getTag(player.getUniqueId()).getFormat();
+    }
 
     @Override
     public int getWeight(UUID uuid) {
