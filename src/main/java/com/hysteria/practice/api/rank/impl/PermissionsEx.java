@@ -4,6 +4,7 @@ import com.hysteria.practice.api.rank.RankManager;
 import com.hysteria.practice.api.rank.Rank;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
+import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
