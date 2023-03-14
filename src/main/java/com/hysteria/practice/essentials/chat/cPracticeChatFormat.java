@@ -17,15 +17,19 @@ public class cPracticeChatFormat implements ChatFormat {
                 return PlaceholderAPI.setPlaceholders(sender, CC.translate(cPractice.get().getMainConfig().getString("CHAT.CLAN_FORMAT")
                         .replace("{prefix}", cPractice.get().getRankManager().getRank().getPrefix(sender.getUniqueId()))
                         .replace("{suffix}", cPractice.get().getRankManager().getRank().getSuffix(sender.getUniqueId()))
+                        .replace("{tag}", cPractice.get().getRankManager().getRank().getTag(sender))
                         .replace("{color}", senderProfile.getColor())
                         .replace("{player}", sender.getName())
+                        .replace("{real_name}", cPractice.get().getRankManager().getRank().getRealName(sender))
                         .replace("{message}", (sender.hasPermission("cpractice.chat.color") ? CC.translate(message) : CC.strip(message)))
                         .replace("{clan}", Clan.getByPlayer(sender).getColoredName())));
             return CC.translate(cPractice.get().getMainConfig().getString("CHAT.CLAN_FORMAT")
                     .replace("{prefix}", cPractice.get().getRankManager().getRank().getPrefix(sender.getUniqueId()))
                     .replace("{suffix}", cPractice.get().getRankManager().getRank().getSuffix(sender.getUniqueId()))
+                    .replace("{tag}", cPractice.get().getRankManager().getRank().getTag(sender))
                     .replace("{color}", senderProfile.getColor())
                     .replace("{player}", sender.getName())
+                    .replace("{real_name}", cPractice.get().getRankManager().getRank().getRealName(sender))
                     .replace("{message}", (sender.hasPermission("cpractice.chat.color") ? CC.translate(message) : CC.strip(message)))
                     .replace("{clan}", Clan.getByPlayer(sender).getColoredName()));
         }
@@ -33,14 +37,18 @@ public class cPracticeChatFormat implements ChatFormat {
             return PlaceholderAPI.setPlaceholders(sender, CC.translate(cPractice.get().getMainConfig().getString("CHAT.DEFAULT_FORMAT")
                     .replace("{prefix}", cPractice.get().getRankManager().getRank().getPrefix(sender.getUniqueId()))
                     .replace("{suffix}", cPractice.get().getRankManager().getRank().getSuffix(sender.getUniqueId()))
+                    .replace("{tag}", cPractice.get().getRankManager().getRank().getTag(sender))
                     .replace("{color}", senderProfile.getColor())
                     .replace("{player}", sender.getName())
+                    .replace("{real_name}", cPractice.get().getRankManager().getRank().getRealName(sender))
                     .replace("{message}", (sender.hasPermission("cpractice.chat.color") ? CC.translate(message) : CC.strip(message)))));
         return CC.translate(cPractice.get().getMainConfig().getString("CHAT.DEFAULT_FORMAT")
                 .replace("{prefix}", cPractice.get().getRankManager().getRank().getPrefix(sender.getUniqueId()))
                 .replace("{suffix}", cPractice.get().getRankManager().getRank().getSuffix(sender.getUniqueId()))
+                .replace("{tag}", cPractice.get().getRankManager().getRank().getTag(sender))
                 .replace("{color}", senderProfile.getColor())
                 .replace("{player}", sender.getName())
+                .replace("{real_name}", cPractice.get().getRankManager().getRank().getRealName(sender))
                 .replace("{message}", (sender.hasPermission("cpractice.chat.color") ? CC.translate(message) : CC.strip(message))));
     }
 }
